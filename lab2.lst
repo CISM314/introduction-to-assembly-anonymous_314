@@ -1,0 +1,27 @@
+     Assembly listing for: lab2.mas
+                Assembled: Sat Mar 24 14:44:57 CAT 2018
+
+000 1006 |         LOAD X           /load value of variable X to AC
+001 3007 |         ADD Y            /add value of y to AC (X+Y)
+002 4008 |         SUBT Z           /Subtract Z from AC (X+Y -Z)
+003 2009 |         STORE W          /Store value of X+Y_Z to variable W
+004 6000 |         OUTPUT            
+005 7000 |         HALT              
+006 0019 |  X      DEC 25           /declare variable X
+007 002C |  Y      DEC 44           /declare variable Y
+008 0016 |  Z      DEC 22           /declare variable Z
+009 0000 |  W      DEC 0            /declare Variable Wload X /load value of variable X to AC
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          W      |   009   | 003
+          X      |   006   | 000
+          Y      |   007   | 001
+          Z      |   008   | 002
+         --------------------------------------------------
+
+
